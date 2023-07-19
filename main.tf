@@ -1,5 +1,5 @@
 
-#provider with accoutn connection 
+#provider with an account connection 
 provider "aws" {
 
   region     = "us-east-1"
@@ -28,7 +28,7 @@ resource "aws_security_group" "SG-jenkins" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["100.7.123.232/32"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
