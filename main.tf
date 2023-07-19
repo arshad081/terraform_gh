@@ -3,8 +3,8 @@
 provider "aws" {
 
   region     = "us-east-1"
-  access_key = "AKIA55SW73FIKQGTOIM5"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 #key pair creation 
 resource "aws_key_pair" "tf-key-pair" {
