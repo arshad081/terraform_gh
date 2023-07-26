@@ -4,7 +4,7 @@ provider "aws" {
   secret_key = ""
 }
 
-resource "aws_instance" "jenkinsprod01" {
+resource "aws_instance" "jenkinsprod05" {
   ami              = "ami-06ca3ca175f37dd66"
   instance_type    = "t2.micro"
   subnet_id        = "subnet-0d8a6bc1a373b86a2"
@@ -16,7 +16,7 @@ resource "aws_instance" "jenkinsprod01" {
 
 
   tags = {
-    Name = "jenkinsprod01"
+    Name = "jenkinsprod05"
     
  }
 }
